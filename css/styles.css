@@ -1,0 +1,248 @@
+/* цвет основного текста #757575 */
+/* цвет заготовков #212121 */
+/* акцентный цвет #2196F3 */
+/* основной цвет фона #E5E5E5 */
+/* вторичный цвет фона #F5F4FA */
+/* акцентный цвет фона #2F303A */
+
+
+/* Color palette */
+:root {
+    /* fonts */
+    --main-font: 'Roboto', sans-serif;
+    --secondary-font: 'Raleway', sans-serif;
+
+    /* text colors */
+    --text-color: #757575;
+    --title-color: #212121;
+
+    /* background colors */
+    --background-color: #F5F4FA;
+    --accent-background-color: #2F303A;
+
+    /* others */
+    --accent-color: #2196F3;
+    --black-color: #000000;
+    --white-color: #FFFFFF;
+}
+
+/* Body */
+body {
+    color: var(--text-color);
+    font-family: var(--main-font);
+}
+
+/* reset styles */
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.list {
+    list-style: none;
+}
+
+/* base styles */
+.btn {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(26 / 16);
+    letter-spacing: 0.03em;
+    border: none;
+    cursor: pointer;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(42 / 36);
+    letter-spacing: 0.03em;
+}
+
+.logo {
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(31 / 26);
+    letter-spacing: 0.03em;
+
+}
+
+/* < !-- Header section --> */
+.header-logo {
+    color: var(--accent-color);
+}
+
+.span-header-logo{
+    color: var(--black-color);
+}
+
+.nav-link,
+.header-action {
+    color: var(--title-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.02em;
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.header-action:hover,
+.header-action:focus {
+    color: var(--accent-color);
+}
+
+.nav-link-current {
+    color: var(--accent-color);
+}
+
+/* Main */
+/* Hero section */
+.hero {
+    background-color: var(--accent-background-color);
+}
+
+.hero-title {
+    color: var(--white-color);
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: calc(60 / 44);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.hero-btn {
+    background-color: var(--accent-color);
+    cursor: pointer;
+    color: var(--white-color);
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    letter-spacing: 0.06em;
+    border: none;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+    background-color: #188CE8;
+}
+
+/* Features section */
+.features-title,
+.work-title,
+.team-title,
+.team-item-title {
+    color: var(--title-color);
+}
+
+.features-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.features-dsc {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+    font-weight: 400;
+}
+
+/* Our team section */
+
+.team {
+    background-color: var(--background-color)
+}
+
+.team-item-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(19 / 16);
+    letter-spacing: 0.03em;
+}
+
+.team-item-position {
+    font-size: 16px;
+    line-height: calc(19 / 16);
+    letter-spacing: 0.03em;
+    font-weight: 400;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--accent-background-color);
+}
+
+.footer-logo {
+    color: var(--accent-color);
+}
+
+.span-footer-logo {
+    color: var(--white-color);
+}
+
+.adress-link {
+    color: var(--white-color);
+    font-style: normal;
+}
+
+.adress-mail,
+.adress-phone {
+    color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
+}
+
+.adress-link:hover,
+.adress-mail:hover,
+.adress-phone:hover,
+.adress-link:focus,
+.adress-mail:focus,
+.adress-phone:focus {
+    color: var(--accent-color);
+}
+
+.adress-link,
+.adress-mail,
+.adress-phone {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+}
+
+/* Projects */
+.project-btn {
+    color: var(--title-color);
+    background-color: var(--background-color);
+}
+
+.project-btn-current {
+    color: var(--white-color);
+    background-color: var(--accent-color);
+}
+
+.project-btn:hover,
+.project-btn:focus {
+    color: var(--white-color);
+    background-color: var(--accent-color);
+}
+
+.project-title {
+    color: var(--title-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: calc(36 / 18);
+    letter-spacing: 0.06em;
+}
+
+.project-type {
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    letter-spacing: 0.03em;
+    font-weight: 400;
+}
