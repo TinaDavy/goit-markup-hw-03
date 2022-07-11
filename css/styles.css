@@ -48,6 +48,10 @@ img {
     display: block;
 }
 
+img {
+    min-width: 100%;
+    height: 100%;
+}
 
 .link {
     text-decoration: none;
@@ -62,6 +66,11 @@ img {
 }
 
 /* base styles */
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .container {
     width: 1200px;
     padding-left: 15px;
@@ -177,10 +186,9 @@ img {
     background-color: var(--accent-background-color);
 }
 
-.hero-container {
+.hero-section {
     padding-top: 200px;
     padding-bottom: 200px;
-    margin-bottom: 94px;
 }
 
 .hero-title {
@@ -228,10 +236,6 @@ img {
 }
 
 /* Features section */
-.feautures-container {
-    margin-bottom: 94px;
-}
-
 .features-list {
     display: flex;
     gap: 30px;
@@ -266,10 +270,6 @@ img {
 }
 
 /* What we are doing section */
-.work-container {
-    margin-bottom: 94px;
-}
-
 .work-title {
     margin-bottom: 50px;
     text-align: center;
@@ -281,11 +281,6 @@ img {
 }
 
 /* Our team section */
-.team-container {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
-
 .team {
     background-color: var(--background-color)
 }
@@ -302,7 +297,7 @@ img {
 
 
 .team-card {
-    width: 270px;
+    flex-basis: 270px;
     padding-bottom: 30px;
 
     background-color: var(--white-color);
@@ -381,7 +376,21 @@ img {
     letter-spacing: 0.03em;
 }
 
-/* Projects */
+/* PORTFOLIO */
+/* Main section */
+
+.main-section {
+    border-top: 1px solid #ECECEC;
+}
+
+/* Filters */
+.filters-list {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
 .project-btn {
     min-width: 128px;
     min-height: 38px;
@@ -406,7 +415,25 @@ img {
     background-color: var(--accent-color);
 }
 
+/* Projects */
+.projects-list {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.project-wrapper {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    flex-basis: 370px;
+    border: 1px solid #EEEEEE;
+    border-top: none;
+}
+
 .project-title {
+    margin-bottom: 4px;
+
     color: var(--title-color);
     font-weight: 700;
     font-size: 18px;
