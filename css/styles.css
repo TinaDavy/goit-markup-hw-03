@@ -169,6 +169,10 @@ img {
     letter-spacing: 0.02em;
 }
 
+.header-action {
+    color: var(--text-color);
+}
+
 .nav-link:hover,
 .nav-link:focus,
 .header-action:hover,
@@ -270,6 +274,10 @@ img {
 }
 
 /* What we are doing section */
+.work-section {
+    padding-top: 0;
+}
+
 .work-title {
     margin-bottom: 50px;
     text-align: center;
@@ -330,12 +338,10 @@ img {
 }
 
 /* Footer */
-.footer-container {
+.footer {
     padding-top: 60px;
     padding-bottom: 60px;
-}
 
-.footer {
     background-color: var(--accent-background-color);
 }
 
@@ -376,6 +382,11 @@ img {
     letter-spacing: 0.03em;
 }
 
+.adress-link,
+.adress-mail {
+    margin-bottom: 9px;
+}
+
 /* PORTFOLIO */
 /* Main section */
 
@@ -392,7 +403,6 @@ img {
 }
 
 .project-btn {
-    min-width: 128px;
     min-height: 38px;
     padding: 6px 22px;
 
